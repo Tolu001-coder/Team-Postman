@@ -1,0 +1,1484 @@
+{
+	"info": {
+		"_postman_id": "97b587fe-beac-49b7-8259-628e03b8d455",
+		"name": "STSTStudentCourse",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42695544",
+		"_collection_link": "https://galactic-robot-934158.postman.co/workspace/Team-Workspace~2c2e5069-995c-489e-8647-133a9357aad8/collection/42695544-97b587fe-beac-49b7-8259-628e03b8d455?action=share&source=collection_link&creator=42695544"
+	},
+	"item": [
+		{
+			"name": "Get All Todo Entries",
+			"item": [
+				{
+					"name": "Get All Todo Entries",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Status code name should have an OK string\", function () {\r",
+									"    pm.response.to.have.status(\"OK\");\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://demo.fusio-project.org/index.php",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"fusio-project",
+								"org"
+							],
+							"path": [
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All Todo Entries 200 ok",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://demo.fusio-project.org/index.php",
+									"protocol": "https",
+									"host": [
+										"demo",
+										"fusio-project",
+										"org"
+									],
+									"path": [
+										"index.php"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.24.0 (Ubuntu)"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 16 Apr 2025 13:11:04 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1414"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Fusio"
+								},
+								{
+									"key": "x-request-id",
+									"value": "e0c7cd71-6e5b-441d-8dd9-93c763d1e8f1"
+								},
+								{
+									"key": "x-operation-id",
+									"value": "meta.getAbout"
+								},
+								{
+									"key": "x-stability",
+									"value": "stable"
+								},
+								{
+									"key": "ratelimit-limit",
+									"value": "900"
+								},
+								{
+									"key": "ratelimit-remaining",
+									"value": "659"
+								},
+								{
+									"key": "vary",
+									"value": "Accept"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"apiVersion\": \"8.4.6.0\",\n    \"title\": \"Fusio\",\n    \"paymentCurrency\": \"EUR\",\n    \"categories\": [\n        \"authorization\",\n        \"backend\",\n        \"consumer\",\n        \"default\",\n        \"system\"\n    ],\n    \"scopes\": [\n        \"default\"\n    ],\n    \"links\": [\n        {\n            \"rel\": \"root\",\n            \"href\": \"https://demo.fusio-project.org/\"\n        },\n        {\n            \"rel\": \"openapi\",\n            \"href\": \"https://demo.fusio-project.org/system/generator/spec-openapi\"\n        },\n        {\n            \"rel\": \"typeapi\",\n            \"href\": \"https://demo.fusio-project.org/system/generator/spec-typeapi\"\n        },\n        {\n            \"rel\": \"route\",\n            \"href\": \"https://demo.fusio-project.org/system/route\"\n        },\n        {\n            \"rel\": \"health\",\n            \"href\": \"https://demo.fusio-project.org/system/health\"\n        },\n        {\n            \"rel\": \"oauth-authorization-server\",\n            \"href\": \"https://demo.fusio-project.org/system/oauth-authorization-server\"\n        },\n        {\n            \"rel\": \"oauth2\",\n            \"href\": \"https://demo.fusio-project.org/authorization/token\"\n        },\n        {\n            \"rel\": \"whoami\",\n            \"href\": \"https://demo.fusio-project.org/authorization/whoami\"\n        },\n        {\n            \"rel\": \"about\",\n            \"href\": \"https://www.fusio-project.org\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "201 entry ok",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://demo.fusio-project.org/index.php",
+									"protocol": "https",
+									"host": [
+										"demo",
+										"fusio-project",
+										"org"
+									],
+									"path": [
+										"index.php"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.24.0 (Ubuntu)"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 16 Apr 2025 13:13:01 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1414"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Fusio"
+								},
+								{
+									"key": "x-request-id",
+									"value": "ffe397b5-0eb3-4d33-9bb0-06707903a089"
+								},
+								{
+									"key": "x-operation-id",
+									"value": "meta.getAbout"
+								},
+								{
+									"key": "x-stability",
+									"value": "stable"
+								},
+								{
+									"key": "ratelimit-limit",
+									"value": "900"
+								},
+								{
+									"key": "ratelimit-remaining",
+									"value": "658"
+								},
+								{
+									"key": "vary",
+									"value": "Accept"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"apiVersion\": \"8.4.6.0\",\n    \"title\": \"Fusio\",\n    \"paymentCurrency\": \"EUR\",\n    \"categories\": [\n        \"authorization\",\n        \"backend\",\n        \"consumer\",\n        \"default\",\n        \"system\"\n    ],\n    \"scopes\": [\n        \"default\"\n    ],\n    \"links\": [\n        {\n            \"rel\": \"root\",\n            \"href\": \"https://demo.fusio-project.org/\"\n        },\n        {\n            \"rel\": \"openapi\",\n            \"href\": \"https://demo.fusio-project.org/system/generator/spec-openapi\"\n        },\n        {\n            \"rel\": \"typeapi\",\n            \"href\": \"https://demo.fusio-project.org/system/generator/spec-typeapi\"\n        },\n        {\n            \"rel\": \"route\",\n            \"href\": \"https://demo.fusio-project.org/system/route\"\n        },\n        {\n            \"rel\": \"health\",\n            \"href\": \"https://demo.fusio-project.org/system/health\"\n        },\n        {\n            \"rel\": \"oauth-authorization-server\",\n            \"href\": \"https://demo.fusio-project.org/system/oauth-authorization-server\"\n        },\n        {\n            \"rel\": \"oauth2\",\n            \"href\": \"https://demo.fusio-project.org/authorization/token\"\n        },\n        {\n            \"rel\": \"whoami\",\n            \"href\": \"https://demo.fusio-project.org/authorization/whoami\"\n        },\n        {\n            \"rel\": \"about\",\n            \"href\": \"https://www.fusio-project.org\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "Get All Todo Entries Fail",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://demo.fusio-project.org/index.php",
+									"protocol": "https",
+									"host": [
+										"demo",
+										"fusio-project",
+										"org"
+									],
+									"path": [
+										"index.php"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.24.0 (Ubuntu)"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 16 Apr 2025 13:21:45 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1414"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Fusio"
+								},
+								{
+									"key": "x-request-id",
+									"value": "a648619b-1e90-4813-a33c-cdd843c2fc9e"
+								},
+								{
+									"key": "x-operation-id",
+									"value": "meta.getAbout"
+								},
+								{
+									"key": "x-stability",
+									"value": "stable"
+								},
+								{
+									"key": "ratelimit-limit",
+									"value": "900"
+								},
+								{
+									"key": "ratelimit-remaining",
+									"value": "655"
+								},
+								{
+									"key": "vary",
+									"value": "Accept"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"apiVersion\": \"8.4.6.0\",\n    \"title\": \"Fusio\",\n    \"paymentCurrency\": \"EUR\",\n    \"categories\": [\n        \"authorization\",\n        \"backend\",\n        \"consumer\",\n        \"default\",\n        \"system\"\n    ],\n    \"scopes\": [\n        \"default\"\n    ],\n    \"links\": [\n        {\n            \"rel\": \"root\",\n            \"href\": \"https://demo.fusio-project.org/\"\n        },\n        {\n            \"rel\": \"openapi\",\n            \"href\": \"https://demo.fusio-project.org/system/generator/spec-openapi\"\n        },\n        {\n            \"rel\": \"typeapi\",\n            \"href\": \"https://demo.fusio-project.org/system/generator/spec-typeapi\"\n        },\n        {\n            \"rel\": \"route\",\n            \"href\": \"https://demo.fusio-project.org/system/route\"\n        },\n        {\n            \"rel\": \"health\",\n            \"href\": \"https://demo.fusio-project.org/system/health\"\n        },\n        {\n            \"rel\": \"oauth-authorization-server\",\n            \"href\": \"https://demo.fusio-project.org/system/oauth-authorization-server\"\n        },\n        {\n            \"rel\": \"oauth2\",\n            \"href\": \"https://demo.fusio-project.org/authorization/token\"\n        },\n        {\n            \"rel\": \"whoami\",\n            \"href\": \"https://demo.fusio-project.org/authorization/whoami\"\n        },\n        {\n            \"rel\": \"about\",\n            \"href\": \"https://www.fusio-project.org\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "Get All Todo Entries passed",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://demo.fusio-project.org/index.php",
+									"protocol": "https",
+									"host": [
+										"demo",
+										"fusio-project",
+										"org"
+									],
+									"path": [
+										"index.php"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.24.0 (Ubuntu)"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 16 Apr 2025 13:24:19 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1414"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Fusio"
+								},
+								{
+									"key": "x-request-id",
+									"value": "119a4afa-cf10-4484-a662-29dec2cabfe5"
+								},
+								{
+									"key": "x-operation-id",
+									"value": "meta.getAbout"
+								},
+								{
+									"key": "x-stability",
+									"value": "stable"
+								},
+								{
+									"key": "ratelimit-limit",
+									"value": "900"
+								},
+								{
+									"key": "ratelimit-remaining",
+									"value": "638"
+								},
+								{
+									"key": "vary",
+									"value": "Accept"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"apiVersion\": \"8.4.6.0\",\n    \"title\": \"Fusio\",\n    \"paymentCurrency\": \"EUR\",\n    \"categories\": [\n        \"authorization\",\n        \"backend\",\n        \"consumer\",\n        \"default\",\n        \"system\"\n    ],\n    \"scopes\": [\n        \"default\"\n    ],\n    \"links\": [\n        {\n            \"rel\": \"root\",\n            \"href\": \"https://demo.fusio-project.org/\"\n        },\n        {\n            \"rel\": \"openapi\",\n            \"href\": \"https://demo.fusio-project.org/system/generator/spec-openapi\"\n        },\n        {\n            \"rel\": \"typeapi\",\n            \"href\": \"https://demo.fusio-project.org/system/generator/spec-typeapi\"\n        },\n        {\n            \"rel\": \"route\",\n            \"href\": \"https://demo.fusio-project.org/system/route\"\n        },\n        {\n            \"rel\": \"health\",\n            \"href\": \"https://demo.fusio-project.org/system/health\"\n        },\n        {\n            \"rel\": \"oauth-authorization-server\",\n            \"href\": \"https://demo.fusio-project.org/system/oauth-authorization-server\"\n        },\n        {\n            \"rel\": \"oauth2\",\n            \"href\": \"https://demo.fusio-project.org/authorization/token\"\n        },\n        {\n            \"rel\": \"whoami\",\n            \"href\": \"https://demo.fusio-project.org/authorization/whoami\"\n        },\n        {\n            \"rel\": \"about\",\n            \"href\": \"https://www.fusio-project.org\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "Get All Todo Entries Status  code name OK string Passed",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://demo.fusio-project.org/index.php",
+									"protocol": "https",
+									"host": [
+										"demo",
+										"fusio-project",
+										"org"
+									],
+									"path": [
+										"index.php"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.24.0 (Ubuntu)"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 16 Apr 2025 13:27:56 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1414"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Fusio"
+								},
+								{
+									"key": "x-request-id",
+									"value": "7b1c65a2-d858-4092-8dda-a31583174c2a"
+								},
+								{
+									"key": "x-operation-id",
+									"value": "meta.getAbout"
+								},
+								{
+									"key": "x-stability",
+									"value": "stable"
+								},
+								{
+									"key": "ratelimit-limit",
+									"value": "900"
+								},
+								{
+									"key": "ratelimit-remaining",
+									"value": "669"
+								},
+								{
+									"key": "vary",
+									"value": "Accept"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"apiVersion\": \"8.4.6.0\",\n    \"title\": \"Fusio\",\n    \"paymentCurrency\": \"EUR\",\n    \"categories\": [\n        \"authorization\",\n        \"backend\",\n        \"consumer\",\n        \"default\",\n        \"system\"\n    ],\n    \"scopes\": [\n        \"default\"\n    ],\n    \"links\": [\n        {\n            \"rel\": \"root\",\n            \"href\": \"https://demo.fusio-project.org/\"\n        },\n        {\n            \"rel\": \"openapi\",\n            \"href\": \"https://demo.fusio-project.org/system/generator/spec-openapi\"\n        },\n        {\n            \"rel\": \"typeapi\",\n            \"href\": \"https://demo.fusio-project.org/system/generator/spec-typeapi\"\n        },\n        {\n            \"rel\": \"route\",\n            \"href\": \"https://demo.fusio-project.org/system/route\"\n        },\n        {\n            \"rel\": \"health\",\n            \"href\": \"https://demo.fusio-project.org/system/health\"\n        },\n        {\n            \"rel\": \"oauth-authorization-server\",\n            \"href\": \"https://demo.fusio-project.org/system/oauth-authorization-server\"\n        },\n        {\n            \"rel\": \"oauth2\",\n            \"href\": \"https://demo.fusio-project.org/authorization/token\"\n        },\n        {\n            \"rel\": \"whoami\",\n            \"href\": \"https://demo.fusio-project.org/authorization/whoami\"\n        },\n        {\n            \"rel\": \"about\",\n            \"href\": \"https://www.fusio-project.org\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "Status code name should have an OK string",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://demo.fusio-project.org/index.php",
+									"protocol": "https",
+									"host": [
+										"demo",
+										"fusio-project",
+										"org"
+									],
+									"path": [
+										"index.php"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.24.0 (Ubuntu)"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 16 Apr 2025 13:30:00 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1414"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Fusio"
+								},
+								{
+									"key": "x-request-id",
+									"value": "61551daa-e0ac-4e7c-a554-4480d6d748c2"
+								},
+								{
+									"key": "x-operation-id",
+									"value": "meta.getAbout"
+								},
+								{
+									"key": "x-stability",
+									"value": "stable"
+								},
+								{
+									"key": "ratelimit-limit",
+									"value": "900"
+								},
+								{
+									"key": "ratelimit-remaining",
+									"value": "742"
+								},
+								{
+									"key": "vary",
+									"value": "Accept"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"apiVersion\": \"8.4.6.0\",\n    \"title\": \"Fusio\",\n    \"paymentCurrency\": \"EUR\",\n    \"categories\": [\n        \"authorization\",\n        \"backend\",\n        \"consumer\",\n        \"default\",\n        \"system\"\n    ],\n    \"scopes\": [\n        \"default\"\n    ],\n    \"links\": [\n        {\n            \"rel\": \"root\",\n            \"href\": \"https://demo.fusio-project.org/\"\n        },\n        {\n            \"rel\": \"openapi\",\n            \"href\": \"https://demo.fusio-project.org/system/generator/spec-openapi\"\n        },\n        {\n            \"rel\": \"typeapi\",\n            \"href\": \"https://demo.fusio-project.org/system/generator/spec-typeapi\"\n        },\n        {\n            \"rel\": \"route\",\n            \"href\": \"https://demo.fusio-project.org/system/route\"\n        },\n        {\n            \"rel\": \"health\",\n            \"href\": \"https://demo.fusio-project.org/system/health\"\n        },\n        {\n            \"rel\": \"oauth-authorization-server\",\n            \"href\": \"https://demo.fusio-project.org/system/oauth-authorization-server\"\n        },\n        {\n            \"rel\": \"oauth2\",\n            \"href\": \"https://demo.fusio-project.org/authorization/token\"\n        },\n        {\n            \"rel\": \"whoami\",\n            \"href\": \"https://demo.fusio-project.org/authorization/whoami\"\n        },\n        {\n            \"rel\": \"about\",\n            \"href\": \"https://www.fusio-project.org\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "Unexpected response to have status reason 'ok' but got 'OK'",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://demo.fusio-project.org/index.php",
+									"protocol": "https",
+									"host": [
+										"demo",
+										"fusio-project",
+										"org"
+									],
+									"path": [
+										"index.php"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.24.0 (Ubuntu)"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 16 Apr 2025 13:31:58 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1414"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Fusio"
+								},
+								{
+									"key": "x-request-id",
+									"value": "2b126414-4869-4f62-8dd2-2373ba2c0236"
+								},
+								{
+									"key": "x-operation-id",
+									"value": "meta.getAbout"
+								},
+								{
+									"key": "x-stability",
+									"value": "stable"
+								},
+								{
+									"key": "ratelimit-limit",
+									"value": "900"
+								},
+								{
+									"key": "ratelimit-remaining",
+									"value": "795"
+								},
+								{
+									"key": "vary",
+									"value": "Accept"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"apiVersion\": \"8.4.6.0\",\n    \"title\": \"Fusio\",\n    \"paymentCurrency\": \"EUR\",\n    \"categories\": [\n        \"authorization\",\n        \"backend\",\n        \"consumer\",\n        \"default\",\n        \"system\"\n    ],\n    \"scopes\": [\n        \"default\"\n    ],\n    \"links\": [\n        {\n            \"rel\": \"root\",\n            \"href\": \"https://demo.fusio-project.org/\"\n        },\n        {\n            \"rel\": \"openapi\",\n            \"href\": \"https://demo.fusio-project.org/system/generator/spec-openapi\"\n        },\n        {\n            \"rel\": \"typeapi\",\n            \"href\": \"https://demo.fusio-project.org/system/generator/spec-typeapi\"\n        },\n        {\n            \"rel\": \"route\",\n            \"href\": \"https://demo.fusio-project.org/system/route\"\n        },\n        {\n            \"rel\": \"health\",\n            \"href\": \"https://demo.fusio-project.org/system/health\"\n        },\n        {\n            \"rel\": \"oauth-authorization-server\",\n            \"href\": \"https://demo.fusio-project.org/system/oauth-authorization-server\"\n        },\n        {\n            \"rel\": \"oauth2\",\n            \"href\": \"https://demo.fusio-project.org/authorization/token\"\n        },\n        {\n            \"rel\": \"whoami\",\n            \"href\": \"https://demo.fusio-project.org/authorization/whoami\"\n        },\n        {\n            \"rel\": \"about\",\n            \"href\": \"https://www.fusio-project.org\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "Get All Todo Entries",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://demo.fusio-project.org/index.php",
+									"protocol": "https",
+									"host": [
+										"demo",
+										"fusio-project",
+										"org"
+									],
+									"path": [
+										"index.php"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.24.0 (Ubuntu)"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 16 Apr 2025 13:33:22 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1414"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Fusio"
+								},
+								{
+									"key": "x-request-id",
+									"value": "83ce9f12-54df-4ee5-9cc0-0ba152fef1d4"
+								},
+								{
+									"key": "x-operation-id",
+									"value": "meta.getAbout"
+								},
+								{
+									"key": "x-stability",
+									"value": "stable"
+								},
+								{
+									"key": "ratelimit-limit",
+									"value": "900"
+								},
+								{
+									"key": "ratelimit-remaining",
+									"value": "796"
+								},
+								{
+									"key": "vary",
+									"value": "Accept"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"apiVersion\": \"8.4.6.0\",\n    \"title\": \"Fusio\",\n    \"paymentCurrency\": \"EUR\",\n    \"categories\": [\n        \"authorization\",\n        \"backend\",\n        \"consumer\",\n        \"default\",\n        \"system\"\n    ],\n    \"scopes\": [\n        \"default\"\n    ],\n    \"links\": [\n        {\n            \"rel\": \"root\",\n            \"href\": \"https://demo.fusio-project.org/\"\n        },\n        {\n            \"rel\": \"openapi\",\n            \"href\": \"https://demo.fusio-project.org/system/generator/spec-openapi\"\n        },\n        {\n            \"rel\": \"typeapi\",\n            \"href\": \"https://demo.fusio-project.org/system/generator/spec-typeapi\"\n        },\n        {\n            \"rel\": \"route\",\n            \"href\": \"https://demo.fusio-project.org/system/route\"\n        },\n        {\n            \"rel\": \"health\",\n            \"href\": \"https://demo.fusio-project.org/system/health\"\n        },\n        {\n            \"rel\": \"oauth-authorization-server\",\n            \"href\": \"https://demo.fusio-project.org/system/oauth-authorization-server\"\n        },\n        {\n            \"rel\": \"oauth2\",\n            \"href\": \"https://demo.fusio-project.org/authorization/token\"\n        },\n        {\n            \"rel\": \"whoami\",\n            \"href\": \"https://demo.fusio-project.org/authorization/whoami\"\n        },\n        {\n            \"rel\": \"about\",\n            \"href\": \"https://www.fusio-project.org\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "Request successful the saver has responded as expected",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://demo.fusio-project.org/index.php",
+									"protocol": "https",
+									"host": [
+										"demo",
+										"fusio-project",
+										"org"
+									],
+									"path": [
+										"index.php"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.24.0 (Ubuntu)"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 16 Apr 2025 13:33:22 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1414"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Fusio"
+								},
+								{
+									"key": "x-request-id",
+									"value": "83ce9f12-54df-4ee5-9cc0-0ba152fef1d4"
+								},
+								{
+									"key": "x-operation-id",
+									"value": "meta.getAbout"
+								},
+								{
+									"key": "x-stability",
+									"value": "stable"
+								},
+								{
+									"key": "ratelimit-limit",
+									"value": "900"
+								},
+								{
+									"key": "ratelimit-remaining",
+									"value": "796"
+								},
+								{
+									"key": "vary",
+									"value": "Accept"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"apiVersion\": \"8.4.6.0\",\n    \"title\": \"Fusio\",\n    \"paymentCurrency\": \"EUR\",\n    \"categories\": [\n        \"authorization\",\n        \"backend\",\n        \"consumer\",\n        \"default\",\n        \"system\"\n    ],\n    \"scopes\": [\n        \"default\"\n    ],\n    \"links\": [\n        {\n            \"rel\": \"root\",\n            \"href\": \"https://demo.fusio-project.org/\"\n        },\n        {\n            \"rel\": \"openapi\",\n            \"href\": \"https://demo.fusio-project.org/system/generator/spec-openapi\"\n        },\n        {\n            \"rel\": \"typeapi\",\n            \"href\": \"https://demo.fusio-project.org/system/generator/spec-typeapi\"\n        },\n        {\n            \"rel\": \"route\",\n            \"href\": \"https://demo.fusio-project.org/system/route\"\n        },\n        {\n            \"rel\": \"health\",\n            \"href\": \"https://demo.fusio-project.org/system/health\"\n        },\n        {\n            \"rel\": \"oauth-authorization-server\",\n            \"href\": \"https://demo.fusio-project.org/system/oauth-authorization-server\"\n        },\n        {\n            \"rel\": \"oauth2\",\n            \"href\": \"https://demo.fusio-project.org/authorization/token\"\n        },\n        {\n            \"rel\": \"whoami\",\n            \"href\": \"https://demo.fusio-project.org/authorization/whoami\"\n        },\n        {\n            \"rel\": \"about\",\n            \"href\": \"https://www.fusio-project.org\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Get All Entries",
+			"item": [
+				{
+					"name": "Get All Entries",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://demo.fusio-project.org/index.php/",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"fusio-project",
+								"org"
+							],
+							"path": [
+								"index.php",
+								""
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						},
+						"description": "https://demo.fusio-project.org/index.php/"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get entry per ID",
+			"item": [
+				{
+					"name": "Get entry per ID - Valid ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://demo.fusio-project.org/index.php",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"fusio-project",
+								"org"
+							],
+							"path": [
+								"index.php"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						},
+						"description": "https://demo.fusio-project.org/index.php/todo/:todo_id"
+					},
+					"response": []
+				},
+				{
+					"name": "Get entry per ID - Invalid ID(params not using TODO ID)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://demo.fusio-project.org/",
+							"protocol": "https",
+							"host": [
+								"demo",
+								"fusio-project",
+								"org"
+							],
+							"path": [
+								""
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						},
+						"description": "https://demo.fusio-project.org/index.php/todo/:todo_id"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get Books",
+			"item": [
+				{
+					"name": "Get All Books",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "540bd43cf706368d43ecbfd49df5a059c92c9f3306de459bf39c3a29b96ebfe5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://simple-books-api.glitch.me/books",
+							"protocol": "https",
+							"host": [
+								"simple-books-api",
+								"glitch",
+								"me"
+							],
+							"path": [
+								"books"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Books by ID",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://simple-books-api.glitch.me/books/:bookId",
+							"protocol": "https",
+							"host": [
+								"simple-books-api",
+								"glitch",
+								"me"
+							],
+							"path": [
+								"books",
+								":bookId"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "bookId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Books by Type",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://simple-books-api.glitch.me/books?type=fiction",
+							"protocol": "https",
+							"host": [
+								"simple-books-api",
+								"glitch",
+								"me"
+							],
+							"path": [
+								"books"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "fiction"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Place a book order",
+			"item": [
+				{
+					"name": "Place a book order - using book ID",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "540bd43cf706368d43ecbfd49df5a059c92c9f3306de459bf39c3a29b96ebfe5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"bookId\": 1,\n    \"customerName\": \"Testify Academy\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://simple-books-api.glitch.me/orders",
+							"protocol": "https",
+							"host": [
+								"simple-books-api",
+								"glitch",
+								"me"
+							],
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get an order",
+			"item": [
+				{
+					"name": "Get all orders",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "540bd43cf706368d43ecbfd49df5a059c92c9f3306de459bf39c3a29b96ebfe5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://simple-books-api.glitch.me/orders",
+							"protocol": "https",
+							"host": [
+								"simple-books-api",
+								"glitch",
+								"me"
+							],
+							"path": [
+								"orders"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get an order - using orderID",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "540bd43cf706368d43ecbfd49df5a059c92c9f3306de459bf39c3a29b96ebfe5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://simple-books-api.glitch.me/orders/:orderId",
+							"protocol": "https",
+							"host": [
+								"simple-books-api",
+								"glitch",
+								"me"
+							],
+							"path": [
+								"orders",
+								":orderId"
+							],
+							"variable": [
+								{
+									"key": "orderId",
+									"value": "AaX7WGCUeHH3lRwGRh57M"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Update an order",
+			"item": [
+				{
+					"name": "Update an order",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "540bd43cf706368d43ecbfd49df5a059c92c9f3306de459bf39c3a29b96ebfe5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"bookId\": 1,\n    \"customerName\": \"Testify Academy\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://simple-books-api.glitch.me/orders/",
+							"protocol": "https",
+							"host": [
+								"simple-books-api",
+								"glitch",
+								"me"
+							],
+							"path": [
+								"orders",
+								""
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Delete an order",
+			"item": [
+				{
+					"name": "Delete an order",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "540bd43cf706368d43ecbfd49df5a059c92c9f3306de459bf39c3a29b96ebfe5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://simple-books-api.glitch.me/orders/:orderId",
+							"protocol": "https",
+							"host": [
+								"simple-books-api",
+								"glitch",
+								"me"
+							],
+							"path": [
+								"orders",
+								":orderId"
+							],
+							"variable": [
+								{
+									"key": "orderId",
+									"value": "rObASEWYlVrRX6cTAEgbt"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Register API Client",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessTokenUrl",
+							"value": "https://demo.fusio-project.org/",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "Authority",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"clientName\": \"Ibironke\",\n   \"clientEmail\": \"ibironkeyekinni@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://simple-books-api.glitch.me/api-clients/",
+					"protocol": "https",
+					"host": [
+						"simple-books-api",
+						"glitch",
+						"me"
+					],
+					"path": [
+						"api-clients",
+						""
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get API Status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://simple-books-api.glitch.me/status",
+					"protocol": "https",
+					"host": [
+						"simple-books-api",
+						"glitch",
+						"me"
+					],
+					"path": [
+						"status"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
